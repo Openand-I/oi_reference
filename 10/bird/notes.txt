@@ -1,0 +1,7 @@
+
+Generate PPM using dither and then run GIMP to export the C/C++ headers
+
+../dither -p auto.2048 -v bird-original.png ../../../netbpm/bird/bird-2048.ppm > ../../../netbpm/bird/header.txt
+
+Two places in test.cpp where "japanese" has to be replaced with "bird"
+change bird to flower in colors.cpp too
