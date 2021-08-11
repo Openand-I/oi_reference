@@ -2,7 +2,7 @@
 
 **oi - Open Image format proposal**
 
-Uncompressed bit map format for adaptive palette quantised images - often resulting in image/frame sizes 40-45% smaller than PNG and comparable to crushed adaptive palette PNG, close to the theoretical minimum file size for (slightly lossy) lossless images and very high fps ( due to it being an uncompressed bitmap that one can simply display directly to screen, better than PNG, MPEG etc )
+Uncompressed bit map format for adaptive palette quantised images - resulting in image/frame sizes 40-45% smaller than PNG and comparable to crushed adaptive palette PNG, close to the theoretical minimum file size for (slightly lossy) lossless images and very high fps ( due to it being an uncompressed bitmap that one can simply display directly to screen, better than PNG, MPEG etc )
 
 No-library display ( what other codecs call decoding/decompression ) ie simply display the frame/web canvas element/HTML image with few lines of in-page code, be it C, or Javascript or Webassembly by just writing the bits as presented by the .bitmap file ( with color lookup involved from an array of 1024 colors ) pixel by pixel to the canvas/HTML image. Further performance gains by doing this operation in blocks of one row at a time or similar, but initially, just writing the bit map on page pixel by pixel can be achieved in a few lines of in-page code.
 
